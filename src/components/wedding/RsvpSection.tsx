@@ -8,7 +8,6 @@ type FormData = {
   partnerName: string;
   transfer: string;
   alcohol: string[];
-  menu: string;
   attending: string;
 };
 
@@ -54,7 +53,6 @@ export default function RsvpSection() {
     partnerName: "",
     transfer: "",
     alcohol: [],
-    menu: "",
     attending: "",
   });
   const [formSent, setFormSent] = useState(false);
@@ -75,7 +73,6 @@ export default function RsvpSection() {
 👫 Придёт с парой: ${formData.withPartner === "yes" ? "Да" : "Нет"}
 ${formData.withPartner === "yes" ? `💑 Имя партнёра: ${formData.partnerName}\n` : ""}🚌 Нужен трансфер: ${formData.transfer === "yes" ? "Да" : "Нет"}
 🍾 Алкоголь: ${formData.alcohol.length > 0 ? formData.alcohol.join(", ") : "Не употребляю"}
-🍽 Предпочтения в меню: ${formData.menu || "Нет"}
 ✅ Присутствие: ${formData.attending === "yes" ? "Буду на торжестве" : "Не смогу прийти"}
   `.trim();
 
@@ -179,12 +176,6 @@ ${formData.withPartner === "yes" ? `💑 Имя партнёра: ${formData.par
                   </button>
                 ))}
               </div>
-            </div>
-
-            {/* Menu */}
-            <div style={{ marginBottom: "1.5rem" }}>
-              <label style={labelStyle}>Предпочтения в меню / аллергии</label>
-              <textarea style={{ ...inputStyle, height: "90px", resize: "none" as const, lineHeight: 1.6 }} placeholder="Вегетарианское меню, непереносимость лактозы..." value={formData.menu} onChange={e => setFormData(p => ({ ...p, menu: e.target.value }))} />
             </div>
 
             {/* Attending */}
