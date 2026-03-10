@@ -6,12 +6,6 @@ const DRESS_CODE_COLORS = [
   { name: "Чёрный", hex: "#1a1a1a" },
 ];
 
-const AVOID_COLORS = [
-  { name: "Белый", hex: "#ffffff" },
-  { name: "Ярко-жёлтый", hex: "#ffe600" },
-  { name: "Ярко-зелёный", hex: "#00e64d" },
-  { name: "Ярко-оранжевый", hex: "#ff6a00" },
-];
 
 export default function DressCodeSection() {
   return (
@@ -58,25 +52,7 @@ export default function DressCodeSection() {
           ))}
         </div>
 
-        <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.72rem", color: "var(--text-light)", margin: "0 0 1rem" }}>
-          Пожалуйста, избегайте:
-        </p>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "1.5rem" }}>
-          {AVOID_COLORS.map(c => (
-            <div key={c.name} style={{ textAlign: "center", opacity: 0.65 }}>
-              <div style={{
-                width: "52px", height: "52px", borderRadius: "50%",
-                background: c.hex, border: "2px dashed rgba(139,94,82,0.4)",
-                margin: "0 auto 0.5rem", position: "relative", overflow: "hidden",
-              }}>
-                <div style={{ position: "absolute", top: "50%", left: 0, right: 0, height: "2px", background: "rgba(180,40,40,0.5)", transform: "translateY(-50%) rotate(-45deg)" }} />
-              </div>
-              <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.62rem", color: "var(--text-light)", margin: 0 }}>
-                {c.name}
-              </p>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
   );
