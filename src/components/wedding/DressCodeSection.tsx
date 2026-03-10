@@ -1,16 +1,16 @@
 const DRESS_CODE_COLORS = [
+  { name: "Нежно-розовый", hex: "#f9dde0" },
+  { name: "Розовый", hex: "#e8929a" },
   { name: "Молочный", hex: "#fdfaf6" },
-  { name: "Нежная роза", hex: "#f2c4be" },
-  { name: "Припылённая сирень", hex: "#d4b8cc" },
-  { name: "Шалфей", hex: "#b5c4b1" },
-  { name: "Песок", hex: "#dfc9a8" },
-  { name: "Небесный", hex: "#c2d8e8" },
+  { name: "Шоколадный", hex: "#5c3d2e" },
+  { name: "Чёрный", hex: "#1a1a1a" },
 ];
 
 const AVOID_COLORS = [
   { name: "Белый", hex: "#ffffff" },
-  { name: "Чёрный", hex: "#1a1a1a" },
-  { name: "Ярко-красный", hex: "#e53935" },
+  { name: "Ярко-жёлтый", hex: "#ffe600" },
+  { name: "Ярко-зелёный", hex: "#00e64d" },
+  { name: "Ярко-оранжевый", hex: "#ff6a00" },
 ];
 
 export default function DressCodeSection() {
