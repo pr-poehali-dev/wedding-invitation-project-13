@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #17212b;
+    --bg-secondary: #0e1621;
+    --bg-tertiary: #1c2733;
+    --bg-message-out: #2b5278;
+    --bg-message-in: #182533;
+    --accent: #5288c1;
+    --accent-hover: #6a9fd8;
+    --accent-light: rgba(82, 136, 193, 0.15);
+    --text-primary: #e8eaed;
+    --text-secondary: #8a9bb2;
+    --text-muted: #556878;
+    --border: rgba(255, 255, 255, 0.06);
+    --border-strong: rgba(255, 255, 255, 0.12);
+    --danger: #e53935;
+    --success: #43a047;
+    --online: #5cdb5c;
+
+    --background: 210 30% 11%;
+    --foreground: 213 20% 90%;
+    --card: 210 28% 14%;
+    --card-foreground: 213 20% 90%;
+    --popover: 210 28% 13%;
+    --popover-foreground: 213 20% 90%;
+    --primary: 211 44% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 25% 18%;
+    --secondary-foreground: 213 20% 85%;
+    --muted: 210 25% 17%;
+    --muted-foreground: 210 15% 55%;
+    --accent: 211 44% 54%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 18%;
+    --input: 210 25% 16%;
+    --ring: 211 44% 54%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 210 30% 9%;
+    --sidebar-foreground: 213 20% 85%;
+    --sidebar-primary: 211 44% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 25% 15%;
+    --sidebar-accent-foreground: 213 20% 85%;
+    --sidebar-border: 210 20% 15%;
+    --sidebar-ring: 211 44% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Golos Text", sans-serif;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    @apply bg-background text-foreground;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.25s ease forwards;
+  }
+  .animate-slide-in-left {
+    animation: slideInLeft 0.3s ease forwards;
+  }
+  .animate-slide-in-right {
+    animation: slideInRight 0.3s ease forwards;
+  }
+  .animate-scale-in {
+    animation: scaleIn 0.2s ease forwards;
+  }
+  .animate-message-in {
+    animation: messageIn 0.2s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes messageIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+}
