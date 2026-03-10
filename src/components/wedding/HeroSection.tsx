@@ -159,7 +159,7 @@ export default function HeroSection({ petals, veilAnimated, contentVisible }: He
               fontWeight: 300,
               margin: "0 0 0.4rem",
             }}>
-              15 июня 2025 года
+              19 июня 2026 года
             </p>
             <p style={{
               fontFamily: "'Montserrat', sans-serif",
@@ -169,7 +169,7 @@ export default function HeroSection({ petals, veilAnimated, contentVisible }: He
               textTransform: "uppercase",
               margin: 0,
             }}>
-              Начало торжества в 16:00
+              Начало торжества в 12:30
             </p>
           </div>
 

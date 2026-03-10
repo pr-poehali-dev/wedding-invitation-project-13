@@ -38,7 +38,7 @@ export default function Index() {
         </p>
         <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, var(--gold), transparent)", width: "140px", margin: "0 auto 1.5rem" }} />
         <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--text-light)", margin: "0 0 2rem" }}>
-          15 июня 2025 · Банкетный зал «Эдем» · Москва
+          19 июня 2026 · База отдыха «Сосновый бор»
         </p>
         <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem", fontStyle: "italic", color: "var(--blush)", margin: 0, fontWeight: 300 }}>
           С любовью ждём вас 🤍

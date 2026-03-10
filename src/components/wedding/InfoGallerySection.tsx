@@ -32,10 +32,12 @@ export default function InfoGallerySection() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1.5rem" }}>
             {[
-              { icon: "Calendar", label: "Дата", value: "15 июня 2025" },
-              { icon: "Clock", label: "Время", value: "16:00 — 00:00" },
-              { icon: "MapPin", label: "Место", value: "Банкетный зал «Эдем»" },
-              { icon: "Navigation", label: "Адрес", value: "ул. Садовая, 12, Москва" },
+              { icon: "Calendar", label: "Дата", value: "19 июня 2026" },
+              { icon: "Clock", label: "Время", value: "Начало в 12:30" },
+              { icon: "MapPin", label: "Место", value: "База отдыха «Сосновый бор»" },
+              { icon: "Navigation", label: "Адрес", value: "ул. Катукова, 11 (бывш. Карусель)" },
+              { icon: "Bus", label: "Трансфер", value: "Отправление 13:50–14:00" },
+              { icon: "UtensilsCrossed", label: "Фуршет", value: "14:50 — 15:30" },
             ].map(item => (
               <div key={item.label} style={{
                 padding: "2rem 1.25rem",
