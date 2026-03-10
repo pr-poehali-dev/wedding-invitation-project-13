@@ -33,10 +33,10 @@ export default function InfoGallerySection() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1.5rem" }}>
             {[
               { icon: "Calendar", label: "Дата", value: "19 июня 2026" },
-              { icon: "Clock", label: "Время", value: "Начало в 12:30" },
-              { icon: "MapPin", label: "Место", value: "База отдыха «Сосновый бор»" },
-              { icon: "Navigation", label: "Адрес", value: "ул. Катукова, 11 (бывш. Карусель)" },
-              { icon: "Bus", label: "Трансфер", value: "Отправление 13:50–14:00" },
+              { icon: "Heart", label: "Регистрация брака", value: "12:30 · Дворец бракосочетания" },
+              { icon: "MapPin", label: "Адрес загса", value: "ул. Ленина, д. 28" },
+              { icon: "Bus", label: "Трансфер на банкет", value: "Отправление 13:50–14:00 · ул. Катукова, 11" },
+              { icon: "MapPin", label: "База отдыха", value: "«Сосновый бор»" },
               { icon: "UtensilsCrossed", label: "Фуршет", value: "14:50 — 15:30" },
             ].map(item => (
               <div key={item.label} style={{
