@@ -80,13 +80,13 @@ ${formData.withPartner === "yes" ? `💑 Имя партнёра: ${formData.par
   `.trim();
 
   const handleSendTelegram = () => {
-    window.open(`https://t.me/nevesta_anna?text=${encodeURIComponent(buildMessage())}`, "_blank");
+    window.open(`https://t.me/Epifuha?text=${encodeURIComponent(buildMessage())}`, "_blank");
     setFormSent(true);
   };
 
   const handleSendEmail = () => {
     const subject = encodeURIComponent("Анкета гостя — Свадьба Анны и Никиты");
-    window.open(`mailto:anna.nevesta@mail.ru?subject=${subject}&body=${encodeURIComponent(buildMessage())}`, "_blank");
+    window.open(`mailto:Yepifantseva.anya@bk.ru?subject=${subject}&body=${encodeURIComponent(buildMessage())}`, "_blank");
     setFormSent(true);
   };
 
